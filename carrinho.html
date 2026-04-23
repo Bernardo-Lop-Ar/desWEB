@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>WJB Style - Carrinho</title>
+    <link rel="stylesheet" href="carrinho.css">
+</head>
+<body>
+
+<header class="header">
+    <a href="index.html" class="btn-voltar">← Loja</a>
+    <h1>WJB Style</h1>
+    <p id="usuario-nome"></p>
+</header>
+
+<main class="container">
+    
+
+    <section class="cart">
+        <h2>Carrinho de Compras</h2>
+
+        <!-- 🔥 Aqui o JS vai inserir os produtos -->
+        <div class="cart-items"></div>
+
+        <!-- 🔥 Aqui o JS vai calcular os valores -->
+        <div class="cart-summary"></div>
+
+        <div class="payment">
+            <h3>Forma de Pagamento</h3>
+
+            <label>
+                <input type="radio" name="pagamento" value="credito" checked>
+                Cartão de Crédito 
+            </label>
+
+            <label>
+                <input type="radio" name="pagamento" value="debito">
+                Cartão de Débito 
+            </label>
+
+            <label>
+                <input type="radio" name="pagamento" value="pix">
+                PIX 
+            </label>
+
+            <label>
+                <input type="radio" name="pagamento" value="boleto">
+                Boleto 
+            </label>
+        </div>
+
+        <button class="btn-checkout" onclick="finalizarCompra()">Confirmar Compra</button>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p>© 2026 WJB Style</p>
+</footer>
+
+<script src="carrinho.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>WJB Style</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+<div class="container">
+
+  <div class="box">
+
+    <!-- forms do login -->
+    <form id="loginForm" class="form active">
+      <h2>Entrar</h2>
+
+      <input type="email" id="loginEmail" placeholder="Email" required>
+      <input type="password" id="loginSenha" placeholder="Senha" required>
+
+      <button type="submit">Entrar</button>
+
+      <p id="loginErro"></p>
+
+      <span>Não tem conta? <a id="goCadastro">Criar</a></span>
+    </form>
+
+    <!-- forms do cadastro -->
+    <form id="cadastroForm" class="form">
+      <h2>Criar Conta</h2>
+
+      <input type="text" id="cadNome" placeholder="Nome" required>
+      <input type="email" id="cadEmail" placeholder="Email" required>
+      <input type="password" id="cadSenha" placeholder="Senha" required>
+
+      <button type="submit">Cadastrar</button>
+
+      <p id="cadMsg"></p>
+
+      <span>Já tem conta? <a id="goLogin">Entrar</a></span>
+    </form>
+
+  </div>
+
+</div>
+
+<script src="login.js"></script>
+</body>
+</html>

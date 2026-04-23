@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+
+    background: url("/img/fundo.png") no-repeat center center fixed;
+    background-size: cover;
+}
+/* TOPO / LOGO */
+.topo {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.logo {
+    width: 200px;
+    border-radius: 50%;
+}
+
+
+.header {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header a {
+    color: rgb(255, 255, 255);
+    margin-left: 30px;
+    text-decoration: none;
+}
+
+/* CONTAINER */
+.container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 40px 20px;
+}
+
+/* GRID */
+.produtos {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto; 
+    padding-bottom: 10px;
+}
+
+
+/* CARD PRODUTO */
+.produto {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #eceaea;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* EFEITO NO CARD */
+.produto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+/* IMAGEM */
+.produto img {
+    width: 80%;
+    transition: transform 0.3s ease;
+}
+
+
+/* ZOOM NA IMAGEM */
+.produto:hover img {
+    transform: scale(1.1);
+}
+
+/* BOTÃO */
+.produto button {
+    background: rgb(255, 255, 255);
+    color: black;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.produto button:hover {
+    background: #000000;
+    color: #ffffff;
+}
+
+
+/* FOOTER */
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.produto h2 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+    color: #050505;
+}
+
+.produto p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000; /* destaque no preço */
+}
+.produtos {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px;
+    
+    background: white; /* fundo branco */
+    border-radius: 10px;
+}
+
